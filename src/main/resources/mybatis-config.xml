@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- <properties resource="db.properties" /> -->
+	<typeAliases>
+		<typeAlias  type="com.homepage.eyecap.model.User" alias="user"/>
+		<typeAlias  type="com.homepage.eyecap.model.Admin" alias="admin"/>
+		<typeAlias  type="com.homepage.eyecap.model.Board" alias="board"/>
+		<typeAlias  type="com.homepage.eyecap.model.BoardFile" alias="boardFile"/>
+		<typeAlias  type="com.homepage.eyecap.model.Fileup" alias="fileup"/>
+		<typeAlias  type="com.homepage.eyecap.model.Pro_log" alias="pro_log"/>
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="User.xml" />
+		<mapper resource="Admin.xml" />
+		<mapper resource="Board.xml" />
+		<mapper resource="BoardFile.xml" />
+		<mapper resource="pro_log.xml" /> <!-- 2019-01-09 제품명 조회수 를 위해 추가 -->
+	</mappers>
+</configuration>
